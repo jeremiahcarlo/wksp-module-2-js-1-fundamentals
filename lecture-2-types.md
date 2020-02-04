@@ -13,7 +13,12 @@ There are 6 basic types in JavaScript.
 
 ```js
 // Examples
-
+// "bacon"
+true
+null
+2323
+[1,2,3,4]
+{name: 'Fred', age 23}
 ```
 
 If you are not sure of the type of a given value, you can use `typeof <VALUE>`
@@ -55,7 +60,7 @@ let example = `So a ${diameter} pizza has an area of ${pi * radius * radius}.`
 
 // Concatenate the strings
 let text = intro + ' ' + example
-
+??
 console.log(text);
 // The area of a circle is π^2. So a 14 pizza has an area of 153.86.
 
@@ -159,14 +164,14 @@ Of course comparison operators and logical operators are usually combined in an 
 ```js
 // Look at these expressions below and determine whether they evaluate to true or false
 
-1. true || false
-2. false && false
-3. 1 < 2 && 2 > 1
-4. 31 < 13 || 1 < 2 && 3 > 1
-5. 400 <= 400 && 399 < 400 && (30 > 31 || 400 > 31)
-6. true && false && false || false && true
-7. true && false || true || false
-8. true && false && false || false && true ? true && false && false || false && true : 1 < 2 && 2 > 1
+1. true || false // true 
+2. false && false // true
+3. 1 < 2 && 2 > 1 // true
+4. 31 < 13 || 1 < 2 && 3 > 1 // true
+5. 400 <= 400 && 399 < 400 && (30 > 31 || 400 > 31) // true
+6. true && false && false || false && true // false
+7. true && false || true || false // true
+8. true && false && false || false && true ? true && false && false || false && true : 1 < 2 && 2 > 1 // true
 ```
 
 ---
@@ -293,9 +298,9 @@ Given this data structure:
 let data = [0, [], [], [1,2,3, [4]]]
 ```
 
-1. How would you access the value `0`?
-2. How would you access the value `3`?
-3. How would you access the value `4`?
+1. How would you access the value `0`? [0][0]
+2. How would you access the value `3`? [3][3]
+3. How would you access the value `4`? [3][3][0]
 
 ---
 

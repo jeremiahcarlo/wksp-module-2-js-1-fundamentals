@@ -13,7 +13,13 @@
 // 1 is odd
 // 2 is even
 // ...
-
+for (let number = 0; number <= 15; number ++) {
+    let type = 'odd'
+    if (number % 2 === 0) {
+        type = 'even';
+    }
+    console.log(`${number} is ${type}`);
+}
 
 
 // many other possibilities here.
